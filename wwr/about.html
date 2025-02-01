@@ -17,16 +17,17 @@
 </head>
 <body>
     <header>
-        <div class = logo-box>
-            <img src="images/z-wwr-oars.png" alt="White Waters Logo" width="200">
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
+        <div class="header-container">
+            <div class="logo-box">
+                <img src="images/z-wwr-oars.png" alt="White Waters Logo" width="200">
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>  
     </header>
 
     <main>
@@ -44,34 +45,59 @@
             </article>
             
         </div>
-        <section>
-            <h2>
-                History  
-            </h2>
-            <p> White Water Rafting started in the 1970s and has grown in popularity since then. It is a thrilling and challenging recreational outdoor activity using an inflatable raft to navigate a river or other bodies of water. This is often done on white water or different degrees of rough water, in order to thrill and excite the raft passengers. The development of this activity as a leisure sport has become popular since the mid-1970s. It is considered an extreme sport, as it can be dangerous. </p>
+        <section class="history">
+            <h2>History</h2>
+            <div class="grid-container">
+                <div class="paragraph-1">
+                    <p>White Water Rafting started in the 1970s and has grown in popularity since then. It is a thrilling and challenging recreational outdoor activity using an inflatable raft to navigate a river or other bodies of water. This is often done on white water or different degrees of rough water, in order to thrill and excite the raft passengers. The development of this activity as a leisure sport has become popular since the mid-1970s. It is considered an extreme sport, as it can be dangerous.</p>
+                </div>
+                <div class="image-1">
+                    <img src="images/rafting26_600.webp" alt="History Image">
+                </div>
+                <div class="paragraph-2">
+                    <p>Historically, the development of rafting as a leisure sport has become popular since the mid-1970s. It is considered an extreme sport, as it can be dangerous. The International Rafting Federation, often referred to as the IRF, is the worldwide body which oversees all aspects of the sport. The IRF issues the rules and regulations which all whitewater rafting operators must adhere to.</p>
+                </div>
+            </div>
         </section>
-        <section>
+            
+        <section class = "adventures">
             <h2>
                 Adventure awaits you!
             </h2>
             
-               
-            <h4>Adventure one</h4>
-            <img src="images/rafting65_600.webp" alt="Adventure 1"> 
-            <h4>Adventure two</h4>
-            <img src="images/rafting64_600.webp" alt="Adventure 2">
-            <h4>Adventure three</h4>
-            <img src="images/rafting59_600.webp" alt="Adventure 3">
-            <h4>Adventure four</h4>
-            <img src="images/rafting29_600.webp" alt="Adventure 4">
-            <h4>Adventure five</h4>
-            <img src="images/rafting20_600.webp" alt="Adventure 5">
+            <figure>
+                <img src="images/rafting65_600.webp" alt="Adventure 1"> 
+                <figcaption><h4>Adventure one</h4></figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/rafting64_600.webp" alt="Adventure 2">
+                <figcaption><h4>Adventure two</h4></figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/rafting59_600.webp" alt="Adventure 3">
+                <figcaption><h4>Adventure three</h4> </figcaption>
+            </figure>
+            
+            <figure>
+                <img src="images/rafting29_600.webp" alt="Adventure 4">
+                <figcaption><h4>Adventure four</h4></figcaption>
+            </figure>
+            
+           <figure>
+                <img src="images/rafting20_600.webp" alt="Adventure 5">
+                <figcaption><h4>Adventure five</h4></figcaption>
+           </figure>
+            
         </section>
 
     </main>
 
     <footer>
-        <p>     
+        <div class="footer-container">
+
+            <p>>     
             ©2025 || White Waters Rafting ltd || Simeon Chirunga
             <nav class="sociallinks">
                 <a href="https://facebook.com">
@@ -83,8 +109,10 @@
                 <a href="https://twitter.com">
                     <img src="images/twitter.webp" alt="Twitter">
                 </a>
+                
             </nav>
-        
+
+        </div>
     </footer>
 </body>
 </html>
