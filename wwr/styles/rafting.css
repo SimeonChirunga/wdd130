@@ -26,6 +26,9 @@
     border-bottom: none;
     text-decoration: none;
   }
+  .sociallinks a {
+    text-decoration: none;
+  }
   
   body {
     max-width: 1200px;

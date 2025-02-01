@@ -1,0 +1,14 @@
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button:first-child {
+    align-self: flex-end;
+  }
+  button:first-child {
+    order: -2;
+  }
+  button:second-child {
+    order: -1;
+  }
