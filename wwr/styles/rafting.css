@@ -1,193 +1,439 @@
 :root {
-    --primary-color: #0077b6;
-    --secondary-color: #00b4d8;
-    --accent1-color: #90e0ef;
-    --accent2-color: #caf0f8;
-    --heading-font: 'Open Sans', sans-serif; 
-    --text-font: 'Open Sans', sans-serif; 
-    --text-color: #333333; 
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-top: 1em;
-  }
-  
-  p {
-    font-family: var(--text-font);
-    font-weight: 300;
-    font-size: 16px;
-    color: #0e0e0e;
-    margin-bottom: 1em;
-  }
-  .sociallinks img {
-   
-    border-bottom: none;
-    text-decoration: none;
-  }
-  .sociallinks a {
-    text-decoration: none;
-    
-  }
-  
-  body {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .hero {
-    position: relative;
-    background-image: url('/images/rafting12_1024.webp');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-  }
-  
-  .hero h1 {
-    position: absolute;
-    color: white;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  --primary-color: #0077b6;
+  --secondary-color: #00b4d8;
+  --accent1-color: #90e0ef;
+  --accent2-color: #caf0f8;
+  --heading-font: 'Open Sans', sans-serif;
+  --text-font: 'Open Sans', sans-serif;
+  --text-color: #333333;
+}
 
-  }
-  .hero div {
-    position: relative;
-    
-  }
-  
-  .hero article {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    right: 10%;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .hero article img {
-    float: right;
-    margin: 2px;
-    width: 30%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .hero article p {
-    margin-bottom: 20px;
-  }   
-  .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+header {
+  background-color: white;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  /* margin-left: 60px; */
+}
 
 .header-container {
+  background-color: #0077b6;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 10px;
-  
-  
-  }
-  
-  .logo-box {
-  margin-right: 20px;
-  }
-  
-  .nav-links {
+  width: 100%;
+  margin-left: 74px;
+  margin-right: 74px;
+  /* max-width: 1200px; */
+  /* padding: 20px; */
+}
+
+.logo-box {
+  margin-left: 60px;
+}
+
+.logo-box img {
+  width: 100px;
+  height: auto;
+}
+.nav-links-header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border: solid 1px black;
+  border: solid 1px white;
   flex-basis: 60%;
   }
-  .nav-links a {
+  .nav-links-header a {
     flex-basis: 20%;
     text-align: center;
     text-decoration: none;
     margin-left: 10px;
-    border-right: 1px solid black;
+    border-right: 1px solid white;
     padding: 15px;
+    color: white;
   }
-  
-  .history {
-    text-align:justify
-    }
-    
-    .history h2 {
-    margin-bottom: 10px;
-    text-align: center;
-    }
-    
-    .grid-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    gap: 20px;
-    width: 100%;
-    margin: 0 auto;
-    }
-    
-    .paragraph-1, .paragraph-2, .image-1 {
-    grid-column: span 1;
-    }
-    .image-1 img {
-      max-width: 100%;
-      height: auto;
-    }
-  
-  .adventures {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .adventures h2 {
-    text-align: center;
-    grid-column: 1/6;
-  }
-  
-  .adventures figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .adventures img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .footer-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .footer-container p {
-    margin-right: 0;
-  }
-  
-  .sociallinks {
-    display: flex;
-    margin-left: auto;
-  }
-  
-  .sociallinks a {
-    margin-left: 10px;
-  }
-  
   
 
-    
-    
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  /* margin: 0; */
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--secondary-color);
+}
+
+
+
+main {
+  margin-top: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 1em;
+}
+
+p {
+  font-family: var(--text-font);
+  font-weight: 300;
+  font-size: 16px;
+  color: #0e0e0e;
+  margin-bottom: 1em;
+}
+
+.sociallinks img {
+  border-bottom: none;
+  text-decoration: none;
+  
+}
+
+.sociallinks a {
+  text-decoration: none;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+  background-image: url('/images/rafting12_1024.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero h1 {
+  position: absolute;
+  color: white;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero div {
+  position: relative;
+}
+
+.hero article {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero article img {
+  float: right;
+  margin: 2px;
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hero article p {
+  margin-bottom: 20px;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.history {
+  text-align: justify;
+}
+
+.history h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.paragraph-1, .paragraph-2, .image-1 {
+  grid-column: span 1;
+}
+
+.image-1 img {
+  max-width: 100%;
+  height: auto;
+}
+.images2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+}
+.images2 img{
+  justify-content: center;
+  justify-items: center;
+  max-width: 200px;
+  height: auto;
+}
+
+.adventures {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.adventures h2 {
+  text-align: center;
+  grid-column: 1/6;
+}
+
+.adventures figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.company-info h2 {
+text-align: center;
+justify-items: center;
+}
+
+.talk-to-us h2 {
+  text-align: center;
+  justify-items: center;
+  }
+
+.image2 {
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.image2 figure {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.adventures img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}
+
+.footer-container p {
+  margin-right: 0%;
+}
+
+.company-info {
+  text-align: justify;
+  justify-content: center;
+}
+
+.history h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.company-grid-container {
+  display: grid;
+  justify-content:center;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #69abcf;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1.2rem;
+
+}
+form{
+  justify-self: center;
+  width: 100%; 
+  margin: 0 auto;
+  padding :0px;
+  /* border:1cm; */
+  background-color:#69abcf;
+  display: grid;
+
+}
+fieldset {
+  display : grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.8rem;
+  margin: 1rem;
+  border: 2px solid;
+  padding: 1rem
+}
+legend{
+  padding: 0.5rem;
+  color: white;
+  font-size: large;
+
+}
+label, input, button,select, textarea {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+label{
+  text-align: justify;
+  padding-left: 1rem;
+}
+input {
+  padding : .9rem;
+  font-size: 0.8rem;
+}
+textarea, message {
+  padding: 1rem;
+  font-size: .9rem;
+  width: 1000px; 
+}
+
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+}
+button {
+  /* margin: 2rem; */
+  background-color: rgb(121, 13, 223);
+  color: wheat;
+  /* border: 0cap; */
+  /* border-radius: 0.3rem; */
+  /* padding: .5rem; */
+  font-size: 1.5rem;
+}
+button:hover{
+  background-color: rgb(82, 192, 96);
+}
+footer{
+  /* margin: 1rem auto 1; */
+  width: 100%;
+  text-align: center;
+  font-size: 0.5rem;
+  color: blueviolet;
+ 
+  /* border-top: 2px solid green; */
+}
+.form-item{
+  display:grid;
+  align-items: center;
+  
+}
+.column1{
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0;
+}
+.column2 {
+  grid-template-columns: 1fr 2fr;
+}
+/* Style the radio buttons */
+.radio-container {
+
+  display: block;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.radio-container input {
+  display: inline-block;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: #0e0e0e solid 1px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background */
+.radio-container:hover input ~ .checkmark {
+  background-color: #f51919;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (dot/circle) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+
+
+
