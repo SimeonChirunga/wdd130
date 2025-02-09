@@ -198,7 +198,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   justify-items: center;
+  
 }
+
 .images2 img{
   justify-content: center;
   justify-items: center;
@@ -286,7 +288,7 @@ justify-items: center;
 .address {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: hsla(11,100%,42.2%,1);
   font-size: 1.2rem;
 
 }
@@ -310,7 +312,7 @@ fieldset {
 }
 legend{
   padding: 0.5rem;
-  color: white;
+  color: black;
   font-size: large;
 
 }
@@ -432,6 +434,10 @@ footer{
   border-radius: 50%;
   background: white;
 }
+figcaption h5 {
+  color: hsl(315deg 50.56% 19.97)
+}
+
 
 
 
