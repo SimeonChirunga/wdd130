@@ -425,7 +425,9 @@ footer{
   display: block;
 }
 
-/* Style the indicator (dot/circle) */
+figcaption h5 {
+  color: rgb(54, 24, 64);
+}
 .radio-container .checkmark:after {
   top: 9px;
   left: 9px;
@@ -433,8 +435,4 @@ footer{
   height: 8px;
   border-radius: 50%;
   background: white;
-}
-figcaption h5 {
-  color: rgb(54, 24, 64)
-;
 }
