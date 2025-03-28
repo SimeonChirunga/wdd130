@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Simeon Chirunga">
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Simeon Chirunga :- Week 2 Assignment -Temples Album">
+    <title>WDD 131 - Dynamic Web Fundamentals - Simeon Chirunga- Temples</title>
+    <meta property="og:title" content="Gweru Business Chamber ">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://simeonchirunga.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://github.com/simeonchirunga/wdd231/favicon.ico">
+    <meta property="og:site_name" content="Gweru Business Chamber">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&family=Playfair+Display:ital@0;1&display=swap"
+        rel="stylesheet" media="screen">
+    <script src="scripts/weatherCurrent.js">defer</script>
+    <script src="scripts/weatherForecast.js">defer</script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/common.js"> defer</script>
+    <script src="scripts/banner.js"> defer</script>
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/gcc.jpg" alt="Chamber of Commerce Logo" width="80">
+        <div>
+            <h1>Gweru Chamber of Commerce</h1>
+            <p>City of Progress/p>
+        </div>
+        <nav>
+            <button id="menu-button">☰</button>
+            <ul>
+                <li class="active"><a href="https://simeonchirunga.github.io/wdd231/chamber/index.html">Home</a></li>
+                <li><a href="https://simeonchirunga.github.io/wdd231/chamber/discover.html">Discover</a></li>
+                <li><a href="https://simeonchirunga.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                <li><a href="https://simeonchirunga.github.io/wdd231/chamber/join.html">Join</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <div id="banner">Join us at the Midlands Show in the City of Progress to discover new business opportunities,
+            meet innovators, and
+            explore investment incentives
+        </div>
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/gweru-hero.webp" media="(max-width: 600px)">
+                <source srcset="images/gweru-hero.webp" media="(max-width: 1000px)">
+                <img src="images/gweru-hero.webp" alt="hero image">
+            </picture>
+            <a href="https://simeonchirunga.github.io/wdd231/chamber/index.html#">Join Now!</a>
+        </div>
+
+        <!-- <div class="banner-hero">
+        <img src="images/gweru-hero.webp" width="1230" alt="Hero Image">
+        <div class="keynote-ticket">
+            <p>test</p>
+            <button>Find services</button>
+        </div>
+
+    </div> -->
+
+
+        <div class="cards" id="cards">
+            <section class="events">
+                <h2>About City of Gweru</h2>
+                <p>Gweru City, strategically located in the heart of Zimbabwe, offers a unique blend of economic
+                    opportunity, rich history,
+                    and cultural diversity. As a hub for industrial and commercial activities, Gweru provides a fertile
+                    ground for investors
+                    seeking to tap into the vast potential of the African market. With its well-developed
+                    infrastructure, including a
+                    international airport, railway line, and major highways, Gweru is an ideal location for businesses
+                    looking to establish
+                    a presence in the region.
+                </p>
+
+                <p>Gweru City boasts a skilled and educated workforce, with several institutions of higher learning,
+                    including the Midlands
+                    State University. This provides investors with access to a pool of talented and motivated
+                    professionals, ready to drive
+                    business growth and innovation. Additionally, the city's relatively low cost of living and doing
+                    business makes it an
+                    attractive destination for companies looking to establish a presence in Africa without breaking the
+                    bank.
+                </p>
+                <p>The City of Gweru is committed to creating a business-friendly environment, with a range of
+                    incentives and support
+                    services available to investors. From tax breaks and investment subsidies to streamlined regulatory
+                    processes and
+                    business incubation programs, we are dedicated to helping businesses thrive. Whether you're looking
+                    to establish a
+                    manufacturing plant, retail outlet, or service-based business, Gweru City offers a unique
+                    combination of opportunity,
+                    infrastructure, and support to help you achieve your goals.</p>
+            </section>
+
+            <section class="weather">
+                <h2>Current <span id="town"> weather</span></h2>
+                <p class="current">Now: <span id="temp">x</span> with <span id="desc">x</span></p>
+                <h3>Forecast</h3>
+                <div id="forecast"></div>
+            </section>
+
+        </div><!-- end cards -->
+    </main>
+
+    <footer class="footer">
+        <div class="contact-box">
+            <p class="footer-captions">Gweru Chanber of Commerce</p>
+
+            <p>No. 45 Lingfield Gweru </p>
+            <p>Midlands Province</p>
+            <p>Zimbabwe</p>
+            <p>gweruchamberofcommerce@gmail.com</p>
+            <p>+263 777285306</p>
+
+        </div>
+
+        <div class="footer-socials">
+            <p class="footer-captions">Stay Connected</p>
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.webp" alt="Facebook">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.webp" alt="Instagram">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.webp" alt="Twitter">
+                </a>
+
+            </nav>
+
+        </div>
+        <div class="copyright-box">
+            <p>WDD231 Class Project</p>
+            <p>Simeon Chirunga</p>
+            <p>© <span id="year"></span> Gweru Chamber of Commerce</p>
+            <p id="lastModified">Last Modified </p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
